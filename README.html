@@ -1,0 +1,26 @@
+<h1>QBASDOWN</h1>
+
+<p>A Markdown implementation for FreeDOS
+Version 0.1</p>
+
+<pre><code class="">Usage: QBASDOWN.EXE Markdown_file
+       QBASDOWN.EXE Markdown_file --verbose"
+If no filename is given, the user is prompted for one.
+</code></pre>
+
+<p>Written for FreeDOS in QuickBASIC 4.5, mostly under a hybrid DOSEMU/FreeDOS 1.2 installation, but the final compilation in a release will always be tested on bare silicon in a dedicated FreeDOS installation.</p>
+
+<p>QuickBASIC? Why? To see if it could be done, I guess, and also to re-familiarize myself with this BASIC dialect. It should also compile in FreeBASIC, and maybe in QB64, but why bother? Linux has dozens of Markdown implementations, probably better than this one, too, but I don&rsquo;t know of any on FreeDOS.</p>
+
+<p>This program will ONLY work on DOS/Windows-formatted text files, which end lines with CRLF. If no CRLF is detected in the first 512 bytes of the file, it will tell the user to run a utility such as UNIX2DOS. Most documents have at least a title line, so that should not be a problem, but you can change that value in the subroutine <em>ChkDorU</em> to 1024 or 2048 if you like, at the expense of some speed.</p>
+
+<p>QBASDOWN is distributed as QuickBASIC source code and released as a single OS executable, called <em>QBASDOWN.EXE</em>.</p>
+
+<p>Please download the file TEST.MD and use QBASDOWN to convert it to HTML.That will show you which aspects of Markdown I&rsquo;ve so far managed to implement in QuickBASIC.</p>
+
+<p>The long-term goal is to implement all of Gruber&rsquo;s original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji section in <em>test.md</em>), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!</p>
+
+<p>This code needs a LOT of optimization. I know that. One specific issue is that things need to be done in a very specific order. Bad design and practice, that. One day I will fix it.</p>
+
+<p>&copy; Michel Clasquin-Johnson 2020<br/>
+Released into the Public Domain.</p>
