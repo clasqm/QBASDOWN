@@ -30,10 +30,9 @@ can use for single spacing.
 Images
 ------
 **Code:**
-~~~
-![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
 
-~~~
+    ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
+
 You've already seen the image at the top of the page. Images must appear on a new line. NOTE that the "Optional title" attribute is not supported ATM. You don't have to remove them from your document: they will simply be ignored.
 
 Character modes
@@ -50,7 +49,7 @@ You can use underscores for _italic_, __bold__, and ___bold italic___.
 
 Or if you prefer, you can use asterisks: *italic*, **bold** and ***bold italic***. But don't mix them up! \_\*\_This\*\_\* or \_\_\_this\*\*\* will not work reliably.
 
-To use an literal asterisk, surround it with spaces: * . Other characters you may want to surround with spaces are & @ < > / \ - and _ in which case they will be changed into HTML codes, _except in headings_. Or you can escape the character with a backslash: \* \& \@ \< \> \/ \\ \- and \_.
+To use an literal asterisk, surround it with spaces: * . Other characters you may want to surround with spaces are & @ < > / \ - and _ in which case they will be changed into HTML codes, _except in headings_. Or you can escape the character with a backslash: \* \& \@ \< \> \/ \\ \- and \_. \| must be escaped if it starts a new line, or it will start a table.
 
 ~~Strikethrough~~ is also supported. so are --underline-- (a non-standard addition) and `monospace`, but use monospace only for variable names and such: to make sure your code appears as it should, rather use code blocks. Inside headings, only _italics mode_ is supported.
 
@@ -153,6 +152,36 @@ Don't try to mix the two styles of code boxes, it won't work. If the one doesn't
 
 ---
 
+Tables follow the Github convention: an opening \| is required, as is a closing \|. 
+
+Tables consist of a single header row, a delimiter row (in which justification can be set with colons), and several data rows. Padding with spaces for readability is allowed in the header and  data lines, but not in the delimiter line. Colons can be used in the delimiter line to indicate justification. The header line determines the number of columns. Column-spanning and line-spanning are not supported.
+
+An empty cell should at least have a space in it for readability. Always leave a blank line between two tables. *Italics* are allowed in the data section only.
+
+Try to keep your tables simple: this code is not very robust. If you really need something more complex, inserting a raw HTML section is safer. Also, if you ever need to start or end a line with \| outside a table, escape it with \\|.
+
+**Code**
+~~~
+
+|Header1         |      Header2     |      Header 3|
+|:---------------|:----------------:|-------------:|
+|left -justified |   centred text   |right-justified|
+|plain text      |     *italics*    |and back to plain text|
+|The next four cells are empty| | |
+| | | Bye-bye|
+
+~~~
+
+In this example, it is the colons in the second row that determine the justification. the padding in the first three lines is just for readability as plain text. This is demonstrated by not padding the last two lines.
+
+|Header1         |      Header2     |      Header 3|
+|:---------------|:----------------:|-------------:|
+|left -justified |   centred text   |right-justified|
+|plain text      |     *italics*    |and back to plain text|
+|The next four cells are empty| | |
+| | | Bye-bye|
+
+
 Miscellaneous
 -------------
 Unicode: QBASDOWN is not Unicode-aware, but characters like ā, ø, ṭ and so on are simply passed through to the HTML code. If you can't see them, update your browser. 
@@ -164,10 +193,11 @@ Unicode: QBASDOWN is not Unicode-aware, but characters like ā, ø, ṭ and so o
 
 QBASDOWN supports a few simple emoji-style characters:  
 Faces::-), :-(, :) - No I don't know why the angry face is larger. Ask the Unicode guys.  
-Arrows<-. ->, |^|. |v|, <=, =>, ||^||, ||v||  
+Arrows: <-. ->, |^|. |v|, <=, =>, ||^||, ||v||.  
 Misc:  {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
-Presentation of these varies between browsers. For example, on my system Firefox displays -o- in colour, while Chrome does not.  
-Let me know if you'd like to see more. Emojis do not work in headings.
+Presentation of these varies between browsers. For example, on my system Firefox displays -o- in colour, while Chrome does not.
+
+Let me know if you'd like to see more. Emojis do not work in headings, tables or blocks.
 
 Any actual HTML in your document will be passed through. Let's do a link that way: <a href="http://www.google.com">http://www.google.com</a>.
 <hr>
@@ -175,12 +205,12 @@ Any actual HTML in your document will be passed through. Let's do a link that wa
 To-Do
 -----
 Footnotes  
+
 Bullet lists  
 numbered lists  
 
 ### Maybe One day ...
 Encode email links  
-Tables  
 Fenced Code blocks using backticks
 
 ### Not gonna happen
