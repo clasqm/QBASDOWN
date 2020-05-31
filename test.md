@@ -195,31 +195,30 @@ However, QBASDOWN also has its own system of creating diacritical marks and comb
 
 **Code:**
      
-    Macron: A%M B%M C%M D%M E%M F%M G%M H%M I%M J%M K%M L%M M%M N%M O%M P%M Q%M R%M S%M T%M X%M Y%M Z%M a%M b%M c%M d%M e%M f%M g%M h%M i%M j%M k%M l%M m%M n%M o%M p%M q%M r%M s%M t%M x%M y%M z%M.  
-    Tilde: A%~ B%~ C%~ D%~ E%~ F%~ G%~ H%~ I%~ J%~ K%~ L%~ M%~ N%~ O%~ P%~ Q%~ R%~ S%~ T%~ X%~ Y%~ Z%~ a%~ b%~ c%~ d%~ e%~ f%~ g%~ h%~ i%~ j%~ k%~ l%~ m%~ n%~ o%~ p%~ q%~ r%~ s%~ t%~ x%~ y%~ z%~.  
-    Acute: A%' B%' C%' D%' E%' F%' G%' H%' I%' J%' K%' L%' M%' N%' O%' P%' Q%' R%' S%' T%' X%' Y%' Z%' a%' b%' c%' d%' e%' f%' g%' h%' i%' j%' k%' l%' m%' n%' o%' p%' q%' r%' s%' t%' x%' y%' z%'.  
-    Grave: A%` B%` C%` D%` E%` F%` G%` H%` I%` J%` K%` L%` M%` N%` O%` P%` Q%` R%` S%` T%` X%` Y%` Z%` a%` b%` c%` d%` e%` f%` g%` h%` i%` j%` k%` l%` m%` n%` o%` p%` q%` r%` s%` t%` x%` y%` z%`.  
-    Dot above: A%D B%D C%D D%D E%D F%D G%D H%D I%D J%D K%D L%D M%D N%D O%D P%D Q%D R%D S%D T%D X%D Y%D Z%D a%D b%D c%D d%D e%D f%D g%D h%D i%D j%D k%D l%D m%D n%D o%D p%D q%D r%D s%D t%D x%D y%D z%D.  
-    Dot below: A%d B%d C%d D%d E%d F%d G%d H%d I%d J%d K%d L%d M%d N%d O%d P%d Q%d R%d S%d T%d X%d Y%d Z%d a%d b%d c%d d%d e%d f%d g%d h%d i%d j%d k%d l%d m%d n%d o%d p%d q%d r%d s%d t%d x%d y%d z%d.  
-    Diaeresis/umlaut: A%: B%: C%: D%: E%: F%: G%: H%: I%: J%: K%: L%: M%: N%: O%: P%: Q%: R%: S%: T%: X%: Y%: Z%: a%: b%: c%: d%: e%: f%: g%: h%: i%: j%: k%: l%: m%: n%: o%: p%: q%: r%: s%: t%: x%: y%: z%:.  
-    Ring: A%O B%O C%O D%O E%O F%O G%O H%O I%O J%O K%O L%O M%O N%O O%O P%O Q%O R%O S%O T%O X%O Y%O Z%O a%O b%O c%O d%O e%O f%O g%O h%O i%O j%O k%O l%O m%O n%O o%O p%O q%O r%O s%O t%O x%O y%O z%O.  
-    Caron: A%^ B%^ C%^ D%^ E%^ F%^ G%^ H%^ I%^ J%^ K%^ L%^ M%^ N%^ O%^ P%^ Q%^ R%^ S%^ T%^ X%^ Y%^ Z%^ a%^ b%^ c%^ d%^ e%^ f%^ g%^ h%^ i%^ j%^ k%^ l%^ m%^ n%^ o%^ p%^ q%^ r%^ s%^ t%^ x%^ y%^ z%^.  
-    Hook: A%H B%H C%H D%H E%H F%H G%H H%H I%H J%H K%H L%H M%H N%H O%H P%H Q%H R%H S%H T%H X%H Y%H Z%H a%H b%H c%H d%H e%H f%H g%H h%H i%H j%H k%H l%H m%H n%H o%H p%H q%H r%H s%H t%H x%H y%H z%H.  
-    Breve: A%B B%B C%B D%B E%B F%B G%B H%B I%B J%B K%B L%B M%B N%B O%B P%B Q%B R%B S%B T%B X%B Y%B Z%B a%B b%B c%B d%B e%B f%B g%B h%B i%B j%B k%B l%B m%B n%B o%B p%B q%B r%B s%B t%B x%B y%B z%B.
+    Macron: A%M B%M C%M D%M E%M F%M G%M H%M I%M J%M K%M L%M M%M N%M O%M P%M Q%M R%M S%M T%M U%M V%M W%M X%M Y%M Z%M a%M b%M c%M d%M e%M f%M g%M h%M i%M j%M k%M l%M m%M n%M o%M p%M q%M r%M s%M t%M u%M v%M w%M x%M y%M z%M.  
+    Tilde: A%~ B%~ C%~ D%~ E%~ F%~ G%~ H%~ I%~ J%~ K%~ L%~ M%~ N%~ O%~ P%~ Q%~ R%~ S%~ T%~ U%~ V%~ W%~ X%~ Y%~ Z%~ a%~ b%~ c%~ d%~ e%~ f%~ g%~ h%~ i%~ j%~ k%~ l%~ m%~ n%~ o%~ p%~ q%~ r%~ s%~ t%~ u%~ v%~ w%~ x%~ y%~ z%~.  
+    Acute: A%' B%' C%' D%' E%' F%' G%' H%' I%' J%' K%' L%' M%' N%' O%' P%' Q%' R%' S%' T%' U%' V%' W%' X%' Y%' Z%' a%' b%' c%' d%' e%' f%' g%' h%' i%' j%' k%' l%' m%' n%' o%' p%' q%' r%' s%' t%' u%' v%' w%' x%' y%' z%'.  
+    Grave: A%` B%` C%` D%` E%` F%` G%` H%` I%` J%` K%` L%` M%` N%` O%` P%` Q%` R%` S%` T%` U%` V%` W%` X%` Y%` Z%` a%` b%` c%` d%` e%` f%` g%` h%` i%` j%` k%` l%` m%` n%` o%` p%` q%` r%` s%` t%` u%` v%` w%` x%` y%` z%`.  
+    Dot above: A%D B%D C%D D%D E%D F%D G%D H%D I%D J%D K%D L%D M%D N%D O%D P%D Q%D R%D S%D T%D U%D V%D W%D X%D Y%D Z%D a%D b%D c%D d%D e%D f%D g%D h%D i%D j%D k%D l%D m%D n%D o%D p%D q%D r%D s%D t%D u%D v%D w%D x%D y%D z%D.  
+    Dot below: A%d B%d C%d D%d E%d F%d G%d H%d I%d J%d K%d L%d M%d N%d O%d P%d Q%d R%d S%d T%d U%d V%d W%d X%d Y%d Z%d a%d b%d c%d d%d e%d f%d g%d h%d i%d j%d k%d l%d m%d n%d o%d p%d q%d r%d s%d t%d u%d v%d w%d x%d y%d z%d.  
+    Diaeresis/umlaut: A%: B%: C%: D%: E%: F%: G%: H%: I%: J%: K%: L%: M%: N%: O%: P%: Q%: R%: S%: T%: U%: V%: W%: X%: Y%: Z%: a%: b%: c%: d%: e%: f%: g%: h%: i%: j%: k%: l%: m%: n%: o%: p%: q%: r%: s%: t%: u%: v%: w%: x%: y%: z%:.  
+    Ring: A%O B%O C%O D%O E%O F%O G%O H%O I%O J%O K%O L%O M%O N%O O%O P%O Q%O R%O S%O T%O U%O V%O W%O X%O Y%O Z%O a%O b%O c%O d%O e%O f%O g%O h%O i%O j%O k%O l%O m%O n%O o%O p%O q%O r%O s%O t%O u%O v%O w%O x%O y%O z%O.  
+    Caron: A%^ B%^ C%^ D%^ E%^ F%^ G%^ H%^ I%^ J%^ K%^ L%^ M%^ N%^ O%^ P%^ Q%^ R%^ S%^ T%^ U%^ V%^ W%^ X%^ Y%^ Z%^ a%^ b%^ c%^ d%^ e%^ f%^ g%^ h%^ i%^ j%^ k%^ l%^ m%^ n%^ o%^ p%^ q%^ r%^ s%^ t%^ u%^ v%^ w%^ x%^ y%^ z%^.  
+    Hook: A%H B%H C%H D%H E%H F%H G%H H%H I%H J%H K%H L%H M%H N%H O%H P%H Q%H R%H S%H T%H U%H V%H W%H X%H Y%H Z%H a%H b%H c%H d%H e%H f%H g%H h%H i%H j%H k%H l%H m%H n%H o%H p%H q%H r%H s%H t%H u%H v%H w%H x%H y%H z%H.  
+    Breve: A%B B%B C%B D%B E%B F%B G%B H%B I%B J%B K%B L%B M%B N%B O%B P%B Q%B R%B S%B T%B U%B V%B W%B X%B Y%B Z%B a%B b%B c%B d%B e%B f%B g%B h%B i%B j%B k%B l%B m%B n%B o%B p%B q%B r%B s%B t%B u%B v%B w%B x%B y%B z%B.  
     Miscellaneous: %AE %ae %/O %/o %IJ %ij %SZ.
      
-
-Macron: A%M B%M C%M D%M E%M F%M G%M H%M I%M J%M K%M L%M M%M N%M O%M P%M Q%M R%M S%M T%M X%M Y%M Z%M a%M b%M c%M d%M e%M f%M g%M h%M i%M j%M k%M l%M m%M n%M o%M p%M q%M r%M s%M t%M x%M y%M z%M.  
-Tilde: A%~ B%~ C%~ D%~ E%~ F%~ G%~ H%~ I%~ J%~ K%~ L%~ M%~ N%~ O%~ P%~ Q%~ R%~ S%~ T%~ X%~ Y%~ Z%~ a%~ b%~ c%~ d%~ e%~ f%~ g%~ h%~ i%~ j%~ k%~ l%~ m%~ n%~ o%~ p%~ q%~ r%~ s%~ t%~ x%~ y%~ z%~.  
-Acute: A%' B%' C%' D%' E%' F%' G%' H%' I%' J%' K%' L%' M%' N%' O%' P%' Q%' R%' S%' T%' X%' Y%' Z%' a%' b%' c%' d%' e%' f%' g%' h%' i%' j%' k%' l%' m%' n%' o%' p%' q%' r%' s%' t%' x%' y%' z%'.  
-Grave: A%` B%` C%` D%` E%` F%` G%` H%` I%` J%` K%` L%` M%` N%` O%` P%` Q%` R%` S%` T%` X%` Y%` Z%` a%` b%` c%` d%` e%` f%` g%` h%` i%` j%` k%` l%` m%` n%` o%` p%` q%` r%` s%` t%` x%` y%` z%`.  
-Dot above: A%D B%D C%D D%D E%D F%D G%D H%D I%D J%D K%D L%D M%D N%D O%D P%D Q%D R%D S%D T%D X%D Y%D Z%D a%D b%D c%D d%D e%D f%D g%D h%D i%D j%D k%D l%D m%D n%D o%D p%D q%D r%D s%D t%D x%D y%D z%D.  
-Dot below: A%d B%d C%d D%d E%d F%d G%d H%d I%d J%d K%d L%d M%d N%d O%d P%d Q%d R%d S%d T%d X%d Y%d Z%d a%d b%d c%d d%d e%d f%d g%d h%d i%d j%d k%d l%d m%d n%d o%d p%d q%d r%d s%d t%d x%d y%d z%d.  
-Diaeresis/umlaut: A%: B%: C%: D%: E%: F%: G%: H%: I%: J%: K%: L%: M%: N%: O%: P%: Q%: R%: S%: T%: X%: Y%: Z%: a%: b%: c%: d%: e%: f%: g%: h%: i%: j%: k%: l%: m%: n%: o%: p%: q%: r%: s%: t%: x%: y%: z%:.  
-Ring: A%O B%O C%O D%O E%O F%O G%O H%O I%O J%O K%O L%O M%O N%O O%O P%O Q%O R%O S%O T%O X%O Y%O Z%O a%O b%O c%O d%O e%O f%O g%O h%O i%O j%O k%O l%O m%O n%O o%O p%O q%O r%O s%O t%O x%O y%O z%O.  
-Caron: A%^ B%^ C%^ D%^ E%^ F%^ G%^ H%^ I%^ J%^ K%^ L%^ M%^ N%^ O%^ P%^ Q%^ R%^ S%^ T%^ X%^ Y%^ Z%^ a%^ b%^ c%^ d%^ e%^ f%^ g%^ h%^ i%^ j%^ k%^ l%^ m%^ n%^ o%^ p%^ q%^ r%^ s%^ t%^ x%^ y%^ z%^.  
-Hook: A%H B%H C%H D%H E%H F%H G%H H%H I%H J%H K%H L%H M%H N%H O%H P%H Q%H R%H S%H T%H X%H Y%H Z%H a%H b%H c%H d%H e%H f%H g%H h%H i%H j%H k%H l%H m%H n%H o%H p%H q%H r%H s%H t%H x%H y%H z%H.  
-Breve: A%B B%B C%B D%B E%B F%B G%B H%B I%B J%B K%B L%B M%B N%B O%B P%B Q%B R%B S%B T%B X%B Y%B Z%B a%B b%B c%B d%B e%B f%B g%B h%B i%B j%B k%B l%B m%B n%B o%B p%B q%B r%B s%B t%B x%B y%B z%B.  
+Macron: A%M B%M C%M D%M E%M F%M G%M H%M I%M J%M K%M L%M M%M N%M O%M P%M Q%M R%M S%M T%M U%M V%M W%M X%M Y%M Z%M a%M b%M c%M d%M e%M f%M g%M h%M i%M j%M k%M l%M m%M n%M o%M p%M q%M r%M s%M t%M u%M v%M w%M x%M y%M z%M.  
+Tilde: A%~ B%~ C%~ D%~ E%~ F%~ G%~ H%~ I%~ J%~ K%~ L%~ M%~ N%~ O%~ P%~ Q%~ R%~ S%~ T%~ U%~ V%~ W%~ X%~ Y%~ Z%~ a%~ b%~ c%~ d%~ e%~ f%~ g%~ h%~ i%~ j%~ k%~ l%~ m%~ n%~ o%~ p%~ q%~ r%~ s%~ t%~ u%~ v%~ w%~ x%~ y%~ z%~.  
+Acute: A%' B%' C%' D%' E%' F%' G%' H%' I%' J%' K%' L%' M%' N%' O%' P%' Q%' R%' S%' T%' U%' V%' W%' X%' Y%' Z%' a%' b%' c%' d%' e%' f%' g%' h%' i%' j%' k%' l%' m%' n%' o%' p%' q%' r%' s%' t%' u%' v%' w%' x%' y%' z%'.  
+Grave: A%` B%` C%` D%` E%` F%` G%` H%` I%` J%` K%` L%` M%` N%` O%` P%` Q%` R%` S%` T%` U%` V%` W%` X%` Y%` Z%` a%` b%` c%` d%` e%` f%` g%` h%` i%` j%` k%` l%` m%` n%` o%` p%` q%` r%` s%` t%` u%` v%` w%` x%` y%` z%`.  
+Dot above: A%D B%D C%D D%D E%D F%D G%D H%D I%D J%D K%D L%D M%D N%D O%D P%D Q%D R%D S%D T%D U%D V%D W%D X%D Y%D Z%D a%D b%D c%D d%D e%D f%D g%D h%D i%D j%D k%D l%D m%D n%D o%D p%D q%D r%D s%D t%D u%D v%D w%D x%D y%D z%D.  
+Dot below: A%d B%d C%d D%d E%d F%d G%d H%d I%d J%d K%d L%d M%d N%d O%d P%d Q%d R%d S%d T%d U%d V%d W%d X%d Y%d Z%d a%d b%d c%d d%d e%d f%d g%d h%d i%d j%d k%d l%d m%d n%d o%d p%d q%d r%d s%d t%d u%d v%d w%d x%d y%d z%d.  
+Diaeresis/umlaut: A%: B%: C%: D%: E%: F%: G%: H%: I%: J%: K%: L%: M%: N%: O%: P%: Q%: R%: S%: T%: U%: V%: W%: X%: Y%: Z%: a%: b%: c%: d%: e%: f%: g%: h%: i%: j%: k%: l%: m%: n%: o%: p%: q%: r%: s%: t%: u%: v%: w%: x%: y%: z%:.  
+Ring: A%O B%O C%O D%O E%O F%O G%O H%O I%O J%O K%O L%O M%O N%O O%O P%O Q%O R%O S%O T%O U%O V%O W%O X%O Y%O Z%O a%O b%O c%O d%O e%O f%O g%O h%O i%O j%O k%O l%O m%O n%O o%O p%O q%O r%O s%O t%O u%O v%O w%O x%O y%O z%O.  
+Caron: A%^ B%^ C%^ D%^ E%^ F%^ G%^ H%^ I%^ J%^ K%^ L%^ M%^ N%^ O%^ P%^ Q%^ R%^ S%^ T%^ U%^ V%^ W%^ X%^ Y%^ Z%^ a%^ b%^ c%^ d%^ e%^ f%^ g%^ h%^ i%^ j%^ k%^ l%^ m%^ n%^ o%^ p%^ q%^ r%^ s%^ t%^ u%^ v%^ w%^ x%^ y%^ z%^.  
+Hook: A%H B%H C%H D%H E%H F%H G%H H%H I%H J%H K%H L%H M%H N%H O%H P%H Q%H R%H S%H T%H U%H V%H W%H X%H Y%H Z%H a%H b%H c%H d%H e%H f%H g%H h%H i%H j%H k%H l%H m%H n%H o%H p%H q%H r%H s%H t%H u%H v%H w%H x%H y%H z%H.  
+Breve: A%B B%B C%B D%B E%B F%B G%B H%B I%B J%B K%B L%B M%B N%B O%B P%B Q%B R%B S%B T%B U%B V%B W%B X%B Y%B Z%B a%B b%B c%B d%B e%B f%B g%B h%B i%B j%B k%B l%B m%B n%B o%B p%B q%B r%B s%B t%B u%B v%B w%B x%B y%B z%B.  
 Miscellaneous: %AE %ae %/O %/o %IJ %ij %SZ.
 
 Why? Because in my day job, I often have to write things like *pat%diccasamuppa%Mda* ... Let me know if I missed something you need in your language.
@@ -242,17 +241,26 @@ Faces: :-), :-(, :) - No I don't know why the angry face is larger. Ask the Unic
 Arrows: <-. ->, |^|. |v|, <=, =>, ||^||, ||v||.  
 Currency: \UKP \USD \USC \YEN \EUR \NAI \RPL \RPI \RUB \LIR \BIT.  
 Gender: \MAL,\FEM, \MAF, \MAM, \FAF and \AND.  
-Misc: (c), (r), \CAD, {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
+Misc: (c), (r), (tm), \CAD, {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
 
 Presentation of these varies between browsers. For example, on my system Firefox displays -o- in colour, while Chrome does not. Also the Bitcoin currency symbol is not well supported by browsers yet.
 
 Be careful with those arrows. The left and right single arrows conflict with the centring codes of the Discount dialect, and if you start or end a line with any of the up or down arrows QBASDOWN will think you are trying to make a table.
 
-Two other codes you can use are \\NBS for a nonbreaking space and \\NBH for a non-breaking hyphen.
-
 Emojis do not work in headings, tables, blockquotes or code blocks.
 
+Two other codes you can use are \\NBS for a nonbreaking space and \\NBH for a non-breaking hyphen.
 
+**Code:**
+     
+    Some common fractions are automatically prettified, but only if surrounded by spaces. If you do not want this, just put something else next to it that is not a space: 1/3.  
+    e.g. 1/2 1/3 2/3 1/4 3/4 1/5 2/5 3/5 4/5 1/6 5/6 1/7 1/8 3/8 5/8 7/8 1/9 1/10 
+     
+
+Some common fractions are automatically prettified, but only if surrounded by spaces. If you do not want this, just put something else next to it that is not a space: 1/3.  
+e.g. 1/2 1/3 2/3 1/4 3/4 1/5 2/5 3/5 4/5 1/6 5/6 1/7 1/8 3/8 5/8 7/8 1/9 1/10 
+
+Fractions do not work in headings, tables, blockquotes or code blocks.
 
 Any actual HTML in your document will be passed through. Let's do a link that way: <a href="http://www.google.com">http://www.google.com</a>.
 

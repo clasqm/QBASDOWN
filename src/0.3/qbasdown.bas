@@ -2,7 +2,7 @@ DECLARE SUB MLSoloCurr ()
 REM QBASDOWN
 REM version 0.1
 REM A Markdown to HTML converter.
-REM      
+REM     
 REM Usage: QBASDOWN.EXE Markdown_file
 REM        QBASDOWN.EXE Markdown_file --verbose"
 REM
@@ -783,6 +783,8 @@ SUB MLSoloMisc
     CALL ChkSolo("(c)", "&#169")
     REM registered trademark
     CALL ChkSolo("(r)", "&#174")
+    REM trademark
+    CALL ChkSolo("(tm)", "&#8482")
     REM Male
     CALL ChkSolo("\MAL", "&#9794")
     REM female
@@ -797,7 +799,45 @@ SUB MLSoloMisc
     CALL ChkSolo("\AND", "&#9893")
     REM Caduceus
     CALL ChkSolo("\CAD", "&#9764")
-
+    REM 1/2
+    CALL ChkSolo(" 1/2 ", " &#189 ")
+    REM 1/3
+    CALL ChkSolo(" 1/3 ", " &#8531 ")
+    REM 2/3
+    CALL ChkSolo(" 2/3 ", " &#8532 ")
+    REM 1/4
+    CALL ChkSolo(" 1/4 ", " &#189 ")
+    REM 3/4
+    CALL ChkSolo(" 3/4 ", " &#190 ")
+    REM 1/5
+    CALL ChkSolo(" 1/5 ", " &#8533 ")
+    REM 2/5
+    CALL ChkSolo(" 2/5 ", " &#8534 ")
+    REM 3/5
+    CALL ChkSolo(" 3/5 ", " &#189 ")
+    REM 4/5
+    CALL ChkSolo(" 4/5 ", " &#8536 ")
+    REM 1/6
+    CALL ChkSolo(" 1/6 ", " &#8537 ")
+    REM 5/6
+    CALL ChkSolo(" 5/6 ", " &#8538 ")
+    REM 1/7
+    CALL ChkSolo(" 1/7 ", " &#8528 ")
+    REM 1/8
+    CALL ChkSolo(" 1/8 ", " &#8539 ")
+    REM 3/8
+    CALL ChkSolo(" 3/8 ", " &#8540 ")
+    REM 5/8
+    CALL ChkSolo(" 5/8 ", " &#8541 ")
+    REM 7/8
+    CALL ChkSolo(" 7/8 ", " &#8542 ")
+    REM 1/9
+    CALL ChkSolo(" 1/9 ", " &#8529 ")
+    REM 1/10
+    CALL ChkSolo(" 1/10 ", " &#8530 ")
+    REM 0/3
+    REM Why? What's the point of that one?
+    REM CALL ChkSolo(" 0/3 ", " &#8585 ")
 END SUB
 
 SUB MLTbls STATIC
