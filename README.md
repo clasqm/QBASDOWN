@@ -1,6 +1,6 @@
 # QBASDOWN
 A Markdown implementation for FreeDOS
-Version 0.1
+Version 0.3
 
 ~~~               
 Usage: QBASDOWN.EXE Markdown_file
