@@ -1,6 +1,6 @@
 ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
 
-QBASDOWN 0.1
+QBASDOWN 0.3.1
 ~~~
 Usage:
 	QBASDOWN.EXE Markdown_file  
@@ -22,7 +22,7 @@ Released into the Public Domain.
 
 Basics
 ------
-Most of the time, you will just be writing as usual. Paragraphs are separated by an empty line, as you can see above
+Most of the time, you will just be writing as usual. Paragraphs are separated by an empty line, as you can see above. If things don't look quite as expected, make sure there is an empty line between major elements, such as between a code block and a list.
 
 Two spaces at the end of a line  
 will produce a break, which you  
@@ -116,6 +116,65 @@ Inline links are supported if the URL section starts with http https or mailto, 
 NOTE: email links are not encoded ATM
 
 ---
+
+Lists
+-----
+
+**Unordered lists** are created  with an asterisk, plus or hyphen, followed by one or more spaces. These are interchangeable, but for the sake of readability, please pick one and stick with it.
+
+**Code:**
+    * Red
+    * White
+    * Blue
+
+    + Red
+    + White
+    + Blue
+
+    - Red
+    - White
+    - Blue
+
+Or even ...
+
+    * Red
+    + White
+    - Blue
+
+will all produce the same result, namely
+
+* Red
++ White
+- Blue
+
+**Ordered lists** are created  with a number, followed by a period and one or more spaces. The first number in the list MUST be 1, but after that you can use any numbering you like. Therefore ...
+
+**Code:**
+    1. Red
+    2. White
+    3. Blue
+
+    1. Red
+    1. White
+    1. Blue
+
+    1. Red
+    999. White
+    1000. Blue
+
+and even
+
+    1. Red
+    b. White
+    c. Blue
+
+will all produce the same result, namely
+
+1. Red
+2. White
+3. Blue
+
+You can put diacriticals, emojis, character styles and links in both kinds of list.
 
 Blocks
 ------
@@ -268,14 +327,17 @@ Any actual HTML in your document will be passed through. Let's do a link that wa
 
 To-Do
 -----
+### Next
 Footnotes  
-Bullet lists  
-numbered lists  
 
 ### Maybe One day ...
 Encode email links  
-Fenced Code blocks using backticks
+Fenced Code blocks using backticks  
+Discount style definition lists  
+PHP-Markdown-extra style definition lists  
+Pandoc style document headers  
 
-### Not gonna happen
+### Not gonna happen any time soon, maybe never
 Table of Contents  
 Links and images by reference  
+PHP-Markdown-extra style tables
