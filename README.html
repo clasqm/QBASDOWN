@@ -1,10 +1,11 @@
 <h1>QBASDOWN</h1>
 
 <p>A Markdown implementation for FreeDOS
-Version 0.4</p>
+Version 0.5</p>
 
-<pre><code class="">Usage: QBASDOWN.EXE Markdown_file
+<pre><code>Usage: QBASDOWN.EXE Markdown_file
        QBASDOWN.EXE Markdown_file --verbose"
+
 If no filename is given, the user is prompted for one.
 </code></pre>
 
@@ -20,7 +21,11 @@ If no filename is given, the user is prompted for one.
 
 <p>The long-term goal is to implement all of Gruber&rsquo;s original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji section in <em>test.md</em>), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!</p>
 
-<p>This program can currently read Markdown files up to 64K in size. Breaking that barrier is Priority #1.</p>
+<h2>Limitations:</h2>
+
+<p>Since version 0.5, QBASDOWN is no longer constrained by the size of a string array. I have used it to convert a 532KB MarkDown file of over 10 000 lines into a 707KB HTML file. That&rsquo;s about half of <em>War and Peace</em>.</p>
+
+<p>Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string space error, it always seems to be one with an enormous amount of raw HTML in it. I am looking into writing an INCLUDE function for that problem.</p>
 
 <p>This code needs a LOT of optimization. I know that. One specific issue is that things need to be done in a very specific order. Bad design and practice, that. One day I will fix it.</p>
 

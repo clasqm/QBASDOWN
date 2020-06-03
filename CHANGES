@@ -15,4 +15,10 @@ Added fractions prettifying support
 Version 0.4
 Tue Jun 2 15:23:00 SAST 2020
 Ordered and unordered lists
-gender and currencies support
+Gender and currencies glyph support
+
+Version 0.5
+Wed Jun 3 13:00:16 SAST 2020
+QBASDOWN can now handle MUCH bigger files
+INCLUDE function
+More code cleanup

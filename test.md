@@ -1,9 +1,9 @@
 ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
 
-QBASDOWN 0.3.1
+QBASDOWN 0.5
 ~~~
 Usage:
-	QBASDOWN.EXE Markdown_file  
+	QBASDOWN.EXE Markdown_file
 	QBASDOWN.EXE Markdown_file --verbose
 
 If no filename is given, the user is prompted for one.
@@ -28,11 +28,23 @@ Two spaces at the end of a line
 will produce a break, which you  
 can use for single spacing.
 
+Included files
+--------------
+
+**Code:**
+     
+    %INCLUDE incl.txt
+     
+
+%INCLUDE incl.txt
+
 Images
 ------
 **Code:**
 
+     
     ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
+     
 
 You've already seen the image at the top of the page. Images must appear on a new line. NOTE that the "Optional title" attribute is not supported ATM. You don't have to remove them from your document: they will simply be ignored.
 
@@ -221,7 +233,7 @@ An empty cell should at least have a space in it for readability. Always leave a
 
 Try to keep your tables simple: this code is not very robust. If you really need something more complex, inserting a raw HTML section is safer. Also, if you ever need to start or end a line with \| outside a table, escape it with \\|.
 
-**Code**
+**Code:**
 ~~~
 
 |Header1         |      Header2     |              Header 3|
@@ -324,6 +336,13 @@ Fractions do not work in headings, tables, blockquotes or code blocks.
 Any actual HTML in your document will be passed through. Let's do a link that way: <a href="http://www.google.com">http://www.google.com</a>.
 
 ----
+
+Limitations:
+------------
+
+Since version 0.5, QBASDOWN is no longer constrained by the maximum size of a string array. I have used it to convert a 532KB MarkDown file of over 10 000 lines into a 707KB HTML file.
+
+Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string-space error, it always seems to be one with an enormous amount of raw HTML in it. I have written an INCLUDE function for that problem.
 
 To-Do
 -----
