@@ -22,3 +22,9 @@ Wed Jun 3 13:00:16 SAST 2020
 QBASDOWN can now handle MUCH bigger files
 INCLUDE function
 More code cleanup
+
+
+Version 0.5.1
+Thu Jun 4 22:55:48 SAST 2020
+centring text
+fixed a problem with #headings

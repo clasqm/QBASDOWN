@@ -1,6 +1,6 @@
 ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
 
-QBASDOWN 0.5
+QBASDOWN 0.6
 ~~~
 Usage:
 	QBASDOWN.EXE Markdown_file
@@ -27,6 +27,14 @@ Most of the time, you will just be writing as usual. Paragraphs are separated by
 Two spaces at the end of a line  
 will produce a break, which you  
 can use for single spacing.
+
+**Code:**
+     
+    >> You can also centre a line of code<<
+    >>with *character* **styles** and emojis :-)<<
+     
+>>You can also centre a line of code<<
+>>with *character* **styles** and emojis :-)<<
 
 Included files
 --------------
