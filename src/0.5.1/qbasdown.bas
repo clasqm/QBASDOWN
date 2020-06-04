@@ -1,6 +1,6 @@
 DECLARE SUB MLCentre ()
 REM QBASDOWN
-REM version 0.6
+REM version 0.5.1
 REM A Markdown to HTML converter.
 REM
 REM Usage: QBASDOWN.EXE Markdown_file
@@ -109,7 +109,7 @@ CodeBlock% = 0
 ListOn% = 0
 OListOn% = 0
 REM
-PRINT "QBASDOWN 0.6"
+PRINT "QBASDOWN 0.5.1"
 PRINT "A Markdown to HTML converter"
 REM
 REM first check for InFile$
