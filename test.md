@@ -3,10 +3,16 @@
 QBASDOWN 0.6
 ~~~
 Usage:
-	QBASDOWN.EXE Markdown_file
-	QBASDOWN.EXE Markdown_file --verbose
+	qbasdown Markdown_file
+	qbasdown Markdown_file --verbose
+	qbasdown Markdown_file --silent
 
-If no filename is given, the user is prompted for one.
+Verbose mode will give you more information about the inner workings
+of the program than you knew you wanted ...
+Silent mode suppresses all screen output. This is most useful when
+calling QBASDOWN from a batch file, shell script or another program.
+If no filename is given, the user is prompted for one. Note that at
+that stage you cannot add the --verbose or --silent switches.
 
 ~~~
 Introduction

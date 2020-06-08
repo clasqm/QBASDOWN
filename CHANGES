@@ -23,10 +23,17 @@ QBASDOWN can now handle MUCH bigger files
 INCLUDE function
 More code cleanup
 
-
 Version 0.5.1
 Thu Jun 4 22:55:48 SAST 2020
 centring text
 fixed a problem with #headings
-Version 0.5.1
-Thu Jun 4 22:59:58 SAST 2020
+
+Version 0.6
+Mon Jun 8 15:12:31 SAST 2020
+Now compiles on both QuickBASIC (Tested on FreeDOS) and FreeBASIC (tested on Linux x86_64)
+Only DOS version will stop at a non-CRLF markdown file.
+Added --silent startup parameter
+Version 0.6
+Mon Jun 8 15:16:48 SAST 2020
+Version 0.6
+Mon Jun 8 15:19:12 SAST 2020

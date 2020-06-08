@@ -1,33 +1,44 @@
 <h1>QBASDOWN</h1>
 
 <p>A Markdown implementation for FreeDOS
-Version 0.5.1</p>
+Version 0.6</p>
 
-<pre><code>Usage: QBASDOWN.EXE Markdown_file
-       QBASDOWN.EXE Markdown_file --verbose"
+<pre><code>Usage:
+    qbasdown Markdown_file
+    qbasdown Markdown_file --verbose
+    qbasdown Markdown_file --silent
 
-If no filename is given, the user is prompted for one.
+Verbose mode will give you more information about the inner workings
+of the program than you knew you wanted ...
+Silent mode suppresses all screen output. This is most useful when
+calling QBASDOWN from a batch file, shell script or another program.
+If no filename is given, the user is prompted for one. Note that at
+that stage you cannot add the --verbose or --silent switches.
 </code></pre>
 
 <p>Written for FreeDOS in QuickBASIC 4.5, mostly under a hybrid DOSEMU/FreeDOS 1.2 installation, but the final compilation in a release will always be tested on bare silicon in a dedicated FreeDOS installation.</p>
 
-<p>QuickBASIC? Why? To see if it could be done, I guess, and also to re-familiarize myself with this BASIC dialect. It should also compile in FreeBASIC, and maybe in QB64, but why bother? Linux has dozens of Markdown implementations, probably better than this one, too, but I don&rsquo;t know of any on FreeDOS.</p>
+<p>QuickBASIC? Why? To see if it could be done, I guess, and also to re-familiarize myself with this BASIC dialect.</p>
 
-<p>This program will ONLY work on DOS/Windows-formatted text files, which end lines with CRLF. If no CRLF is detected in the first 512 bytes of the file, it will tell the user to run a utility such as UNIX2DOS. Most documents have at least a title line, so that should not be a problem, but you can change that value in the subroutine <em>ChkDorU</em> to 1024 or 2048 if you like, at the expense of some speed.</p>
+<p>It also compiles in FreeBASIC using the <em>-lang qb</em> switch. Linux has dozens of Markdown implementations, probably better than this one, too, but I don&rsquo;t know of any on FreeDOS. But after I started adding in features other implementations don&rsquo;t have, I thought &ldquo;But I want to use this on Linux myself!&rdquo; So from version 0.6 onwards, there will be an X86_64 Linux version as well.</p>
 
-<p>QBASDOWN is distributed as QuickBASIC source code and released as a single OS executable, called <em>QBASDOWN.EXE</em>.</p>
+<p>The DOS version of this program will ONLY work on DOS/Windows-formatted text files, which end lines with CRLF. If no CRLF is detected in the first 1024 bytes of the file, it will tell the user to run a utility such as UNIX2DOS. Most documents have at least a title line, so that should not be a problem. The Linux version should be able to swallow any input file.</p>
 
-<p>Please download the file TEST.MD and use QBASDOWN to convert it to HTML.That will show you which aspects of Markdown I&rsquo;ve so far managed to implement in QuickBASIC.</p>
+<p>QBASDOWN is distributed as QuickBASIC source code and released as a single OS executable, called <em>QBASDOWN.EXE</em> and a 64-bit Linux executable called <em>qbasdown</em>. Yes, I&rsquo;ve kept the name, even if it is now compiled in FreeBASIC. Unzip either one to any directory in your PATH.</p>
 
-<p>The long-term goal is to implement all of Gruber&rsquo;s original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji section in <em>test.md</em>), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!</p>
+<p>Once you&rsquo;ve unzipped the Linux version, you can find the dependencies with <em>ldd qbasdown</em>. You should also have the <em>tput</em> command, normally part of <em>ncurses</em>. QBASDOWN will work without <em>tput</em>, it just doesn&rsquo;t look as pretty.</p>
+
+<p>Please download the file TEST.MD, cd to where you saved it and use QBASDOWN to convert it to HTML.It will create a file called TEST.HTM in the same directory. That file will show you which aspects of Markdown I&rsquo;ve so far managed to implement in QuickBASIC.</p>
+
+<p>The long-term goal is to implement all of Gruber&rsquo;s original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji and diacriticals section in <em>test.md</em>), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!</p>
 
 <h2>Limitations:</h2>
 
 <p>Since version 0.5, QBASDOWN is no longer constrained by the size of a string array. I have used it to convert a 532KB MarkDown file of over 10 000 lines into a 707KB HTML file. That&rsquo;s about half of <em>War and Peace</em>.</p>
 
-<p>Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string space error, it always seems to be one with an enormous amount of raw HTML in it. I am looking into writing an INCLUDE function for that problem.</p>
+<p>Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string space error, it always seems to be one with an enormous amount of raw HTML in it. I have written an INCLUDE function for that problem.</p>
 
-<p>This code needs a LOT of optimization. I know that. One specific issue is that things need to be done in a very specific order. Bad design and practice, that. One day I will fix it.</p>
+<p>This code needs a LOT of optimization. I know that.</p>
 
 <p>&copy; Michel Clasquin-Johnson 2020<br/>
 Released into the Public Domain.</p>
