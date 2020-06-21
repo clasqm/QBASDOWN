@@ -213,7 +213,7 @@ Blocks
 >These lines are blockquoted:
 >The \> character must be in front of each new line. Unlike other markdown implementations, you cannot just put the \> in front of the first line in a list of lines and wait for an empty line to show up. Unlike code blocks, blockquotes are fully processed for charcter styles and substitutions.
 
-QBASDOWN supports both types of code block. Unfortunately it is a little difficult to render code block code when the result would also become a code block! Please see the explantions in the code blocks below and compare the test.md file.
+QBASDOWN supports both types of code block. Unfortunately it is a little difficult to render code block code when the result would also become a code block! Please see the explanations in the code blocks below and compare the test.md file.
 
      
     This is one kind of code block.
@@ -236,8 +236,14 @@ and back to normal
 If you think the block is a little crowded, just make an empty line.
 
 ~~~
-Don't try to mix the two styles of code boxes, it won't work. If the one doesn't work for you, just try the other one. Sorry, backticks *should* work as well as tildes, but I cannot get that to work in QuickBASIC.
 
+```
+This is a block
+made with backticks ```
+instead of tildes
+```
+
+Don't try to mix the two styles of code boxes, it won't work. If the one doesn't work for you, just try the other one.
 
 Tables follow the Github convention: an opening \| is required, as is a closing \|. 
 
@@ -318,7 +324,7 @@ QBASDOWN supports a few simple emoji-style characters:
     Arrows:  <-. ->, |^|. |v|, <=, =>, ||^|| and ||v||.  
     Gender:  \MAL,\FEM, \MAF, \MAM, \FAF and \AND.  
     Currency: \UKP \USD \USC \YEN \EUR \NAI \RPL \RPI \RUB \LIR \BIT.  
-    Misc:    (c), (r), {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
+    Misd:\install\xf20dos    (c), (r), {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
 
 
 
@@ -326,7 +332,7 @@ Faces: :-), :-(, :) - No I don't know why the angry face is larger. Ask the Unic
 Arrows: <-. ->, |^|. |v|, <=, =>, ||^||, ||v||.  
 Currency: \UKP \USD \USC \YEN \EUR \NAI \RPL \RPI \RUB \LIR \BIT.  
 Gender: \MAL,\FEM, \MAF, \MAM, \FAF and \AND.  
-Misc: (c), (r), (tm), \CAD, {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
+Misd:\install\xf20dos (c), (r), (tm), \CAD, {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
 
 Presentation of these varies between browsers. For example, on my system Firefox displays -o- in colour, while Chrome does not. Also the Bitcoin currency symbol is not well supported by browsers yet.
 
