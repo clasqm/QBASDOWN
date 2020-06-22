@@ -37,3 +37,7 @@ Added --silent startup parameter
 Version 0.6.1
 Sun Jun 21 20:40:11 SAST 2020
 It took a weird workaround, but I finally got backtick-delimited code blocks working!
+
+Version 0.6.1.1
+Mon Jun 22 21:18:06 SAST 2020
+Code and sample file cleanup, really minor.
