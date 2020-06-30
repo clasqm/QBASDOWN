@@ -70,18 +70,19 @@ Character modes
     
     _italic_, __bold__, and ___bold italic___
     *italic*, **bold** and ***bold italic***
-    * & @ < > / \ - and _
-    \* \& \@ \< \> \/ \\ \- and \_
+    ^ * & @ < > / \ - and _
+    \^ \* \& \@ \< \> \/ \\ \- and \_
      ~~Strikethrough~~ --underline-- and `monospace`
      
 You can use underscores for _italic_, __bold__, and ___bold italic___.
 
 Or if you prefer, you can use asterisks: *italic*, **bold** and ***bold italic***. But don't mix them up! \_\*\_This\*\_\* or \_\_\_this\*\*\* will not work reliably.
 
-To use an literal asterisk, surround it with spaces: * . Other characters you may want to surround with spaces are & @ < > / \ - and _ in which case they will be changed into HTML codes, _except in headings_. Or you can escape the character with a backslash: \* \& \@ \< \> \/ \\ \- and \_. \| must be escaped if it starts a new line, or it will start a table.
+To use an literal asterisk, surround it with spaces: * . Other characters you may want to surround with spaces are ^ & @ < > / \ - and _ in which case they will be changed into HTML codes, _except in headings_. Or you can escape the character with a backslash: \^ \* \& \@ \< \> \/ \\ \- and \_.
+
+\| (the pipe character) must be escaped if it starts a new line, or it will try to start a table.
 
 ~~Strikethrough~~ is also supported. so are --underline-- (a non-standard addition) and `monospace`, but use monospace only for variable names and such: to make sure your code appears as it should, rather use code blocks. Inside headings, only _italics mode_ is supported.
-
 Let's make a horizontal rule. Note the empty lines around the three (or more) dashes, so that it does not get mistaken for a Line style subheading.
 
 ---
@@ -122,6 +123,9 @@ level 2
 Note the required space behind the # symbol. NOTE: Closing hashes are NOT supported ATM.
 
 ###This line is missing the space after the hash symbols, so it will not be translated into a level 3 heading.
+
+**Code:**
+    #### You can put _italics_ in a heading! Links too: <https://facebook.com>.
 
 #### You can put _italics_ in a heading! Links too: <https://facebook.com>.
 
@@ -264,6 +268,14 @@ If you think the block is a little crowded, just make an empty line.
 
 ~~~
 
+**Code:**
+    ```
+    This is a block
+    fenced off with backticks (```)
+    instead of tildes
+    ```
+
+**Result**
 ```
 This is a block
 fenced off with backticks (```)
@@ -354,7 +366,6 @@ QBASDOWN supports a few simple emoji-style characters:
     Misc:    (c), (r), {||, |b|, |c|. |x|, (X), %X, d-d, {o}, |p ||p and -o-.  
 
 
-
 Faces: :-), :-(, :) - No I don't know why the angry face is larger. Ask the Unicode guys.  
 Arrows: <-. ->, |^|. |v|, <=, =>, ||^||, ||v||.  
 Currency: \UKP \USD \USC \YEN \EUR \NAI \RPL \RPI \RUB \LIR \BIT.  
@@ -380,7 +391,53 @@ e.g. 1/2 1/3 2/3 1/4 3/4 1/5 2/5 3/5 4/5 1/6 5/6 1/7 1/8 3/8 5/8 7/8 1/9 1/10
 
 Fractions do not work in headings, tables, blockquotes or code blocks.
 
-Any actual HTML in your document will be passed through. Let's do a link that way: <a href="http://www.google.com">http://www.google.com</a>.
+**Code:**
+     
+    QBASDOWN can do references: BTW have you read my book (Clasquin-Johnson, 2016)?
+    \REF**Clasquin-Johnson, M.** 2016. _Programming with yab_. Smashwords. Available at https://www.smashwords.com/books/view/691720. [Accessed: 28 June 2020].
+     
+
+QBASDOWN can do references: BTW, have you read my _free_ e-book (Clasquin-Johnson, 2016)?
+\REF**Clasquin-Johnson, M.** 2016. _Programming with yab_. Smashwords. Available at https://www.smashwords.com/books/view/691720. [Accessed: 28 June 2020].
+
+A sorted List of References Cited will appear at the end of the generated HTML file, or wherever you put the \\BIB code (on its own line). You can have multiple \\BIB codes, so that you can have a reference list for each section of your document. If you are not working in English, the \\BIB code will let you set up a heading in your own language. In this document, I've added a few non-cited sources just to show the sorting process at work.
+
+### References listed in this section
+\BIB
+
+\REF**Kalantari, M.R.** 2020. Protecting the Citadel of Islam in the Modern Era: A Case of Shiʿi Mujtahids and the Najaf Seminary in Early Twentieth-Century Iraq. _The Muslim World_ 110(2), pp. 217–231. Available at: https://onlinelibrary.wiley.com/doi/abs/10.1111/muwo.12340 [Accessed: 28 June 2020].
+\REF**Sardella, F.** 2020. Bengali Vaishnavism in Court: the Gaudiya Math’s Crisis of Succession. _The Journal of Hindu Studies_ 13(1), pp. 54–70. Available at: https://academic.oup.com/jhs/article/13/1/54/5854080 [Accessed: 22 June 2020].
+\REF**Amoateng, A.Y.** 2020. Does Religion Affect Political Engagement of the Youth at the Tertiary Level of Education? The Case of Undergraduate Students at a South African University. _Theologia Viatorum_ 44(1), p. 11. Available at: https://theologiaviatorum.org/index.php/tv/article/view/21 [Accessed: 24 February 2020].
+\REF**Buitendag, J. and Simuț, C.C.** 2020. Ecodomy as Education in Tertiary Institutions. Teaching Theology and Religion in a Globalised World: African Perspectives. _HTS Teologiese Studies-Theological Studies_ 76(1), p. 8. Available at: https://hts.org.za/index.php/hts/article/view/5956 [Accessed: 25 June 2020].
+This is a non-standard addition. The emphasis is on creating text that will look OK on a web page _and_ that will work when you import the HTML file into a word processor, not on making back-and-forth links like on Wikipedia.
+
+The \\REF markers can appear anywhere in your text, but each must appear on its own line. You only need to list them once per document, or per section, depending on how you want to present your references. If you cite a source in section 1 and section 3 of your document, and you choose to have each section display its own Reference List, both sections must contain their own copy of the reference.
+
+Also, QBASDOWN is not a reference manager. It doesn't know the difference between Harvard, MLA and Chicago styles, to name just three. It's up to you to get the format correct.
+
+**Code:**
+    QBASDOWN can do endnotes^. You should see them^ if you scroll right down to the bottom^ of the generated HTML.
+    \EN This is an endnote.
+    \EN This is the second endnote. Look, _italic_ and **bold** work in endnotes! :-)
+    \EN Oh, I see you made it to the bottom!
+     
+**Results:**
+QBASDOWN can do endnotes^. You should see them^ if you scroll right down to the bottom^ of the generated HTML.
+\EN This is an endnote.
+\EN This is the second endnote. Look, _italic_ and **bold** work in endnotes! :-)
+\EN Oh, I see you made it to the bottom!
+
+The unescaped \^ character, with a space or punctuation mark on one side (usually on the right) indicates where the endnote marker will go. This is followed immediately by lines containing the endnotes for that line (i.e. paragraph), in the correct order. In the above paragraph, there are three endnote markers, and there are three lines containing endnotes. Numbering is automatic, starting at 1. \^ codes with spaces on both sides will not register as a footnote.
+
+You must start the endnote lines with \\EN. Spaces after the \\EN code will be trimmed and are just for readability.
+
+This is another non-standard extension. It is not compatible with PHP-Markdown Extra's "footnotes".
+
+Multiparagraph endnotes are not supported, sorry. _Footnotes_ at the bottom of each page are not supported, since HTML does not really have the concept of a "page".
+
+Endnotes will always appear at the very end of your document, even after the References list. You may want to end your document with a suitable heading.
+
+Finally, any actual HTML in your document will be passed through. Let's do a link that way: <a href="http://www.google.com">http://www.google.com</a>. It's up to you not to embed QBASDOWN codes into the HTML, though.
 
 ----
 
@@ -389,20 +446,33 @@ Limitations:
 
 Since version 0.5, QBASDOWN is no longer constrained by the maximum size of a string array. I have used it to convert a 532KB MarkDown file of over 10 000 lines into a 707KB HTML file.
 
-Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string-space error, it always seems to be one with an enormous amount of raw HTML in it. I have written an INCLUDE function for that problem.
+Complexity, however, is another matter. Whenever a file has failed on me with an out-of-string-space error, it always seems to be one with an enormous amount of raw HTML in it. I have written an INCLUDE function for that problem. Technically, it is possible to overwhelm the string space with large numbers of endnotes and references. I have not found the limits for that situation yet.
+
+QBASDOWN is limited to 128 references per Reference List (each marked by a \\BIB code). If you need more than that, perhaps you want to reconsider your choice of software for your PhD thesis. But if you must, you can look in the source code and increase the limits in the Quicksort routine.
 
 To-Do
 -----
 ### Next
-Footnotes  
+Pandoc-style document headers  
+Table of Contents  
 
 ### Maybe One day ...
 Encode email links  
 Discount style definition lists  
 PHP-Markdown-extra style definition lists  
-Pandoc style document headers  
 
 ### Not gonna happen any time soon, maybe never
-Table of Contents  
 Links and images by reference  
 PHP-Markdown-extra style tables
+
+--------------------------------------------------------------------
+
+Fake references inserted to demonstrate sorting
+----------------------------------------------
+\bib
+
+------------------------------------------------------------------
+
+Notes
+-----
+

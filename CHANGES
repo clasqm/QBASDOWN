@@ -41,3 +41,7 @@ It took a weird workaround, but I finally got backtick-delimited code blocks wor
 Version 0.6.1.1
 Mon Jun 22 21:18:06 SAST 2020
 Code and sample file cleanup, really minor.
+
+Version 0.7
+Wed Jul 1 00:28:58 SAST 2020
+QBASDOWN now handles references and endnotes.
