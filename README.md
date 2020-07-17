@@ -20,7 +20,7 @@ Written for FreeDOS in QuickBASIC 4.5, mostly under a hybrid DOSEMU/FreeDOS 1.2 
 
 QuickBASIC? Why? To see if it could be done, I guess, and also to re-familiarize myself with this BASIC dialect.
 
-It also compiles in FreeBASIC using the *-lang qb* switch. Linux has dozens of Markdown implementations, probably better than this one, too, but I don't know of any on FreeDOS. But after I started adding in features other implementations don't have, I thought "But I want to use this on Linux myself!" So from version 0.6 onwards, there will be an X86_64 Linux version as well.
+It also compiles in FreeBASIC using the *-lang qb* switch. Linux has dozens of Markdown implementations, probably better than this one, too, but I don't know of any on FreeDOS. But after I started adding in features other implementations don't have, I thought "But I want to use this on Linux myself!" So from version 0.6 onwards, there will be an X86 64-bit Linux version as well.
 
 The DOS version of this program will ONLY work on DOS/Windows-formatted text files, which end lines with CRLF. If no CRLF is detected in the first 1024 bytes of the file, it will tell the user to run a utility such as UNIX2DOS. Most documents have at least a title line, so that should not be a problem. The Linux version should be able to swallow any input file.
 
