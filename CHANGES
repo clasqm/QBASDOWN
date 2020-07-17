@@ -45,3 +45,8 @@ Code and sample file cleanup, really minor.
 Version 0.7
 Wed Jul 1 00:28:58 SAST 2020
 QBASDOWN now handles references and endnotes.
+
+Version 0.8
+Fri Jul 17 19:29:04 SAST 2020
+QBASDOWN will now create a basic Table of Contents from suitably formatted hash-style headings.
+The first line can now include a Pandoc-style header that sets the document title (the name that appears in your browser's title bar).

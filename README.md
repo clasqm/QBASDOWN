@@ -1,6 +1,7 @@
 # QBASDOWN
+
 A Markdown implementation for FreeDOS
-Version 0.7
+Version 0.8
 
 ~~~
 Usage:
@@ -30,6 +31,7 @@ Once you've unzipped the Linux version, you can find the dependencies with *ldd 
 Please download the file TEST.MD, cd to where you saved it and use QBASDOWN to convert it to HTML.It will create a file called TEST.HTM in the same directory. That file will show you which aspects of Markdown I've so far managed to implement in QuickBASIC.
 
 The long-term goal is to implement all of Gruber's original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji and diacriticals section in *test.md*), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!
+
 
 Limitations:
 ------------
