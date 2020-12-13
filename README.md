@@ -28,7 +28,7 @@ QBASDOWN is distributed as QuickBASIC source code and released as a single OS ex
 
 Once you've unzipped the Linux version, you can find the dependencies with *ldd qbasdown*. You should also have the *tput* command, normally part of *ncurses*. QBASDOWN will work without *tput*, it just doesn't look as pretty.
 
-Please download the file TEST.MD, cd to where you saved it and use QBASDOWN to convert it to HTML.It will create a file called TEST.HTM in the same directory. That file will show you which aspects of Markdown I've so far managed to implement in QuickBASIC.
+Please download the file TEST.MD, cd to where you saved it and use QBASDOWN to convert it to HTML. It will create a file called TEST.HTM in the same directory. That file will show you which aspects of Markdown I've so far managed to implement in QuickBASIC.
 
 The long-term goal is to implement all of Gruber's original Markdown, plus selected extensions from MultiMarkdown and other developments, a few modest ideas of my own (see the emoji and diacriticals section in *test.md*), and some prettyprinting. Technically, I suppose that means I am inventing a new dialect of Markdown. Fame at last!
 
