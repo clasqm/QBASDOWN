@@ -1,7 +1,8 @@
 % QBASDOWN example and Manual file.
+% Michel Clasquin-Johnson (clasqm@gmail.com)
 ![Markdown logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Markdown-mark.svg/96px-Markdown-mark.svg.png)
 
-QBASDOWN 0.8
+QBASDOWN 0.8.1
 ============
 
 ~~~
@@ -71,9 +72,11 @@ can use for single spacing.
 
 ## Header line ##
 
-If the very first line starts with the % character followed by a space, the rest of the line will become the document title (what gets printed in your browser's title bar or tab).
+If the very first line starts with the % character followed by a space, the rest of the line will become the document title metadata (what gets printed in your browser's title bar or tab).
 
-This version does not support 2nd and 3rd line % headers (author and date). That may change in the future.
+If the second line line starts with the % character followed by a space, the rest of the line will become the Author metadata (this is used by some browsers and search engines).
+
+This version does not support 3rd line % headers (date metadata). That may change in the future.
 
 ----------------------------------------------------------------------
 
@@ -335,10 +338,10 @@ QBASDOWN supports three types of Markdown code block. Unfortunately it is a litt
     If you think the block is a little crowded, just make an empty line.
      
     ~~~
-
+     
 
 **Result:**
-~~~ #####LOOK! You can put nonprinting comments here.#####
+~~~  #####LOOK! You can put nonprinting comments here.#####
 
 This is a different kind of code block,
 made with a "fence" of three tilde (~~~~) characters above and below the text
@@ -586,6 +589,7 @@ Link ToC to Headings
 
 ## Maybe One day ...
 Encode email links  
+Activate 3rd line % date metadata
 
 ## Not gonna happen any time soon, maybe never
 Links and images by reference  

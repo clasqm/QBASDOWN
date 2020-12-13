@@ -50,3 +50,8 @@ Version 0.8
 Fri Jul 17 19:29:04 SAST 2020
 QBASDOWN will now create a basic Table of Contents from suitably formatted hash-style headings.
 The first line can now include a Pandoc-style header that sets the document title (the name that appears in your browser's title bar).
+
+Version 0.8.1
+Sun 13 Dec 2020 10:51:56 PM SAST
+The second line can now include a pandoc-style header that includes Author metadata
+
