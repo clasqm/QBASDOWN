@@ -3,6 +3,8 @@
 A Markdown implementation for FreeDOS
 Version 0.8.1
 
+Please Note: This Github project is no longer maintained. Please go to https://sourceforge.net/projects/qbasdown/ for the latest version.
+
 ~~~
 Usage:
 	qbasdown Markdown_file
